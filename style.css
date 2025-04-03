@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-color: #037676;
+}
+
+h1{
+    font-weight: 800;
+    color: #e8aeb7;
+    text-shadow: 1px 1px 1px black;
+    margin: 20px;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box{
+    aspect-ratio: 1; 
+    height: 18vmin;
+    width: 18vmin;
+    font-size: 10vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    background-color: #f5e6a9;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reset-game{
+    height: 6vmin;
+    width: 16vmin;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    background-color: #f7f3e3;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hide{
+    display:  none;
+}
+
+#msg{
+    font-size: 5vmin;
+    font-weight: 700;
+    color: #a9fff7;
+}
+
+.new-game{
+    height: 6vmin;
+    width: 16vmin;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    background-color: #f7f3e3;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn{
+    margin-top: 30px;
+}
+
+footer{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width : 600px) {
+    .container{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+    }
+
+    .box{
+        width: 16vmin;
+        height: 16vmin;
+    }
+
+    .new-game{
+        width: 6rem;
+        height: 3vh;
+        margin-bottom: 10px;
+    }
+    .reset-game{
+        width: 6rem;
+        height: 3vh;
+    }
+
+    footer{
+        margin-top: -1.5rem;
+    }
+}
+
+@media screen and (max-width :250px) {
+    .game{
+        width: 80vmin;
+        height: 30vmin;
+        margin-top: -250px;
+    }
+
+    #msg{
+        font-size: 7vmin;
+        font-weight: 700;
+        color: #a9fff7;
+    }
+    
+    footer{
+        margin-top: -12rem;
+    }
+}
